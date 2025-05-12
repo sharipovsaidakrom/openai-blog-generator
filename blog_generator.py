@@ -4,7 +4,7 @@ from dotenv import dotenv_values
 config = dotenv_values(".env")
 
 # create a .env file on the folder and write the the code below
-# API_KEY='your api token. In .env file, there shouldn't be any empty space'
+# API_KEY='your-api-token.' # In .env file, there shouldn't be any empty space
 openai.api_key = config['API_KEY']
 
 def generate_blog(paragraph_topic):
